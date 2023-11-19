@@ -1,0 +1,62 @@
+.calc {
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    border-radius: 30px;
+    background: #050729;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 18px;    
+}
+
+.calc-screen {
+    height: 100px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.calc-screen p {
+    text-align: right;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+        "ac plus-minus memory devision"
+        "seven eight nine multyplay"
+        "four five six minus"
+        "one two three plus"
+        "zero dot back equel";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background: #322362;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn:hover {
+    filter: brightness(135%);
+}
+.btn:active {
+    filter: brightness(80%);
+}
+.btn.btn.bg-gray {
+    background: gray;
+
+}
+
+.btn.btn.bg-pinck {
+    background: #A276FF;
+}
